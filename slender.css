@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'ShallowGrave';
+    src:url('/fonts/ShallowGraveBB.ttf');
+}
+
+rwar
+@font-face {
+	font-family: 'LivingHell';
+    src:url('/fonts/LivingHell.ttf');
+}
+@font-face {
+	font-family: 'Feast';
+    src:url('/fonts/feast.ttf');
+}
+
+#storyText {
+	display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column; /* column | row */
+    height: 600px;
+}
+
+#locationDescription {
+	text-shadow: 3px 4px #8A0707;
+	color: white;
+	font-family: Feast;
+}
+
+#slenderFader {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+body {
+	color: white;
+}
