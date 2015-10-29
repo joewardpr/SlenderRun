@@ -3,7 +3,6 @@
     src:url('/fonts/ShallowGraveBB.ttf');
 }
 
-rwar
 @font-face {
 	font-family: 'LivingHell';
     src:url('/fonts/LivingHell.ttf');
@@ -13,10 +12,6 @@ rwar
     src:url('/fonts/feast.ttf');
 }
 
-.scaryButton {
-	margin: 10px 10px;
-	padding: 10px 10px;
-}
 
 #storyText {
 	display: flex;
@@ -30,6 +25,11 @@ rwar
 	text-shadow: 3px 4px #8A0707;
 	color: white;
 	font-family: Feast;
+}
+
+.scaryButton {
+	margin: 10px 10px;
+	padding: 10px 10px;
 }
 
 #slenderFader {
