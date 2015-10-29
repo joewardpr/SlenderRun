@@ -57,7 +57,7 @@ function getLocationButton(location) {
 			direction = snap.val().direction
 			label = snap.val().label
 
-			buttonCode = '<button onclick="javascript:displaySlenderChoices(\'' + location + '\')" type="button" class="btn-lg btn-danger">Go ' + direction + ' ' + label + '</button> '
+			buttonCode = '<button onclick="javascript:displaySlenderChoices(\'' + location + '\')" type="button" class="btn-lg btn-danger scaryButton">Go ' + direction + ' ' + label + '</button> '
 
 			$('#choiceButtons').append(buttonCode)			
 		})
