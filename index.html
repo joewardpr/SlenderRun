@@ -29,7 +29,13 @@
 
 <div class='container-fluid'>
 	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 text-center" id="etherText">&nbsp;</div>
+		<div class="col-lg-8 col-lg-offset-2 etherBox">
+			<div class='row'>
+				<div class="col-lg-1" id="etherFace"></div>
+				<div class="col-lg-11" id="etherText"></div>
+			</div>
+		</div>
+		<div class="col-lg-2 etherBox">&nbsp;</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 text-center" id="storyText">
@@ -41,6 +47,12 @@
 </div>
 
 <div id="slenderFader"></div>
+
+<script>
+$( document ).ready(function() {
+    initEtherMessages()
+});
+</script>
 
 </body>
 <html>

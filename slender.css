@@ -21,6 +21,19 @@
     height: 600px;
 }
 
+#etherText {
+	font-size: 28px;	
+}
+
+.etherBox {
+	display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column; /* column | row */
+    height: 50px;
+
+}
+
 #locationDescription {
 	text-shadow: 3px 4px #8A0707;
 	color: white;
