@@ -14,6 +14,12 @@ function displaySlenderChoices(currentLocation, kill) {
 
 	if (kill == "yes") {
 		$('#soundSlender').trigger("play")
+		
+		buttonCode = '<button onclick="javascript:location.reload()" type="button" class="btn-lg btn-success scaryButton">Start Over, Prepare to Die Again</button>'
+
+		$('#restartButton').html(buttonCode)
+
+
 	}
 
 	slenderDB.child('locations').child(currentLocation).once('value', function (snap) {
