@@ -10,7 +10,11 @@ function startSlender() {
 // The can only choose among the presented choices
 // But the location can have multiple different descriptions.
 // Perhaps we simulate how they notice different things each time they enter a location.
-function displaySlenderChoices(currentLocation) {
+function displaySlenderChoices(currentLocation, kill) {
+
+	if (kill == "yes") {
+		$('#soundSlender').trigger("play")
+	}
 
 	slenderDB.child('locations').child(currentLocation).once('value', function (snap) {
 
@@ -90,11 +94,6 @@ function initEtherMessages() {
 }
 
 
-// $(function() {
-//     init();
-// });
-
-
 // Give a location, get the proper labels and create the HTML for the button
 function getLocationButton(location) {
 		
@@ -104,9 +103,9 @@ function getLocationButton(location) {
 
 			kill = snap.val().die
 			direction = snap.val().direction
-			label = snap.val().label
+			label = snap.val().label			
 
-			buttonCode = '<button onclick="javascript:displaySlenderChoices(\'' + location + '\')" type="button" class="btn-lg btn-danger scaryButton">Go ' + direction + ' ' + label + '</button> '
+			buttonCode = '<button onclick="javascript:displaySlenderChoices(\'' + location + '\',\'' + kill + '\')" type="button" class="btn-lg btn-danger scaryButton">Go ' + direction + ' ' + label + '</button> '
 
 			$('#choiceButtons').append(buttonCode)			
 		})
