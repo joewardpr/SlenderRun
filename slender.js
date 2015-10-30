@@ -18,6 +18,7 @@ function displaySlenderChoices(currentLocation, kill) {
 		buttonCode = '<button onclick="javascript:location.reload()" type="button" class="btn-lg btn-success scaryButton">Start Over, Prepare to Die Again</button>'
 
 		$('#restartButton').html(buttonCode)
+		$('#restartButton').effect("shake",{times: 20},25000)
 
 
 	}
