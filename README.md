@@ -5,5 +5,6 @@ Move throughout the house, trying to avoid the demon "Slender". Each room presen
 # Contributors
 
 Allyson White and Joe Ward, UIT Startups 2.0
+www.uitstartups.org
 
 2015
